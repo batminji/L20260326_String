@@ -13,6 +13,7 @@ public:
 	}
 
 	String operator+(const String& RHS) const;
+	bool operator==(const String& Other) const;
 	inline const char* GetPointer() const;
 
 protected:

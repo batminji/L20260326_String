@@ -1,20 +1,13 @@
 #include <iostream>
-#include <string>
 #include "String.h"
 
 int main()
 {
-	std::string s1 = "Hello";
-	std::string s2("World");
-
-	std::string s3 = s1 + " " + s2;
-
-	std::cout << s3 << std::endl;
-
 	String S1{ "Hello" };
-	String S2 = "World";
+	String S2{ "Hello" };
 	String S3 = S1 + " " + S2;
 
-	std::cout << S3.GetPointer() << std::endl;
+	// std::cout << S3.GetPointer() << std::endl;
+	std::cout << (S1 == S2) << std::endl;
 	return 0;
 }

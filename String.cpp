@@ -48,6 +48,22 @@ String String::operator+(const String& RHS) const
 	return Result;
 }
 
+bool String::operator==(const String& Other) const
+{
+	if (Length != Other.Length)
+	{
+		return false;
+	}
+	for (int i = 0; i < Length; ++i)
+	{
+		if (Data[i] != Other.Data[i])
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
 inline const char* String::GetPointer() const
 {
 	return Data;
