@@ -12,6 +12,9 @@ int main()
 	std::cout << s3 << std::endl;
 
 	String S1{ "Hello" };
+	String S2 = "World";
+	String S3 = S1 + " " + S2;
 
+	std::cout << S3.GetPointer() << std::endl;
 	return 0;
 }
